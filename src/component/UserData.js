@@ -14,7 +14,7 @@ const UserData = () => {
 
   const getUser = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/get-user", {
+      const response = await axios.get("https://mscit-backend-o21q.onrender.com/api/get-user", {
         headers:{
           "Content-Type": "Application/json",
           "Authorization": "Bearer " + token
@@ -34,7 +34,7 @@ const UserData = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:5000/api/delete-user/${id}`, {
+      const response = await axios.delete(`https://mscit-backend-o21q.onrender.com/api/delete-user/${id}`, {
         headers:{
           "Content-Type": "Application/json",
           "Authorization": "Bearer " + token

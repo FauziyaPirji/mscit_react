@@ -24,7 +24,7 @@ const EditUser = () => {
   }, []);
 
   const getUserData = async() => {
-    const response = await axios.get(`http://localhost:5000/api/get-single-user/${id}`, {
+    const response = await axios.get(`https://mscit-backend-o21q.onrender.com/api/get-single-user/${id}`, {
         headers:{
           "Content-Type": "Application/json",
           "Authorization": "Bearer " + token
@@ -125,7 +125,7 @@ const EditUser = () => {
         data.append("image", imageFile);
       }
 
-      const response = await axios.put(`http://localhost:5000/api/update-user/${id}`, data, {
+      const response = await axios.put(`https://mscit-backend-o21q.onrender.com/api/update-user/${id}`, data, {
         headers:{
           "Content-Type": "Application/json",
           "Authorization": "Bearer " + token

@@ -91,7 +91,7 @@ const AddUser = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/add-user", data, {
+      const response = await axios.post("https://mscit-backend-o21q.onrender.com/api/add-user", data, {
         headers:{
           "Content-Type": "Application/json",
           "Authorization": "Bearer " + token

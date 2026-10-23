@@ -16,7 +16,7 @@ const Login = () => {
         console.log(formvalue)
 
         try{
-            const response = await axios.post("http://localhost:5000/api/login", formvalue)
+            const response = await axios.post("https://mscit-backend-o21q.onrender.com/api/login", formvalue)
             console.log(response.data)
 
             if(response.data.status === 1) {
